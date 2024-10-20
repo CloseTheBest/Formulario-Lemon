@@ -17,7 +17,8 @@
             <p>Preencha o formulário abaixo com todos os detalhes para a sua produção de vídeo.</p>
         </header>
 
-        <form id="briefingForm">
+        <!-- Aqui está o formulário com o link do Formspree -->
+        <form id="briefingForm" action="https://formspree.io/f/xeoqoqrr" method="POST">
             <!-- Seção 1: Informações Pessoais -->
             <fieldset>
                 <legend>Informações Pessoais</legend>
@@ -117,6 +118,21 @@
                     <textarea id="informacoesAdicionais" name="informacoesAdicionais" placeholder="Existe algo mais que queira informar para este projeto?"></textarea>
                 </div>
             </fieldset>
+
+            <!-- Botão de Enviar -->
+            <div class="form-group action">
+                <button type="submit" class="btn">Enviar Briefing</button>
+            </div>
+        </form>
+
+        <!-- Exibe o resultado do envio -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
 
             <!-- Botão de Enviar -->
             <div class="form-group action">
