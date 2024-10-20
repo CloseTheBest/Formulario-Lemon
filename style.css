@@ -1,0 +1,169 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Preto profundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fdfd96; /* Amarelo-limão */
+}
+
+/* Fundo estilizado com animação */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(fundosite2.png) no-repeat center center/cover; /* SVG de ondas menos padronizadas */
+    opacity: 0.8; /* Ajuste a opacidade se quiser um efeito transparente */
+    z-index: -1;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #1c1c1c; /* Preto suave */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+header h1 {
+    color: #fdfd96;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fdfd96;
+    margin-bottom: 40px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 2px solid #fdfd96; /* Borda amarela */
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: #fdfd96;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #fdfd96;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    background-color: #2b2b2b; /* Fundo escuro dos inputs */
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #fdfd96; /* Amarelo-limão no foco */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #fdfd96;
+}
+
+.action {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #fdfd96;
+    color: #121212;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e4e400;
+}
+
+/* Mensagem de Resultado */
+.result {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #fdfd96;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+    }
+}
