@@ -6,16 +6,22 @@
     <title>Formulário da Lemon</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="javinha.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <div class="background"></div> <!-- Fundo com animação -->
     
     <div class="container">
         <header>
-            <h1>Formulário de Briefing de Vídeo</h1>
+            <div class="header-content">
+                <!-- Logo -->
+                <img src="logo.png" alt="Logo" class="logo">
+                
+                <!-- Título -->
+                <h1>Formulário de Briefing de Vídeo</h1>
+            </div>
             <p>Preencha o formulário abaixo com todos os detalhes para a sua produção de vídeo.</p>
-        </header>
+        </header>        
 
         <!-- Aqui está o formulário com o link do Formspree -->
         <form id="briefingForm" action="https://formspree.io/f/xeoqoqrr" method="POST">
@@ -63,27 +69,62 @@
                 <legend>QUAIS SERVIÇOS VOCÊ PRECISA PARA FAZER O TRABALHO ACONTECER?</legend>
                 <div class="form-group">
                     <div class="checkbox-group">
-                        <input type="checkbox" id="direcao" name="servicos" value="Direção">
-                        <label for="direcao">Direção</label>
-                        <input type="checkbox" id="roteiro" name="servicos" value="Roteiro">
-                        <label for="roteiro">Roteiro</label>
-                        <input type="checkbox" id="direcaoArte" name="servicos" value="Direção de Arte">
-                        <label for="direcaoArte">Direção de Arte (cenários/objetos de cena)</label>
-                        <input type="checkbox" id="pesquisa" name="servicos" value="Pesquisa e Locação">
-                        <label for="pesquisa">Pesquisa e locação para gravação</label>
-                        <input type="checkbox" id="edicaoInstagram" name="servicos" value="Edição Instagram">
-                        <label for="edicaoInstagram">Edição de vídeo (principal - para Instagram)</label>
-                        <input type="checkbox" id="edicaoYoutube" name="servicos" value="Edição Youtube">
-                        <label for="edicaoYoutube">Edição de vídeo (principal - para YouTube)</label>
-                        <input type="checkbox" id="cortes" name="servicos" value="Edição de Cortes">
-                        <label for="cortes">Edição de cortes (para redes sociais ou shorts do YouTube)</label>
-                        <input type="checkbox" id="design" name="servicos" value="Design">
-                        <label for="design">Design (ID Visual)</label>
-                        <input type="checkbox" id="videografismo" name="servicos" value="Videografismo">
-                        <label for="videografismo">Videografismo (Motion Design - animações ou vinhetas)</label>
+                        <!-- Direção -->
+                        <div class="checkbox-item">
+                            <label for="direcao">Direção</label>
+                            <input type="checkbox" id="direcao" name="servicos" value="Direção">
+                        </div>
+            
+                        <!-- Roteiro -->
+                        <div class="checkbox-item">
+                            <label for="roteiro">Roteiro</label>
+                            <input type="checkbox" id="roteiro" name="servicos" value="Roteiro">
+                        </div>
+            
+                        <!-- Direção de Arte -->
+                        <div class="checkbox-item">
+                            <label for="direcaoArte">Direção de Arte (cenários/objetos de cena)</label>
+                            <input type="checkbox" id="direcaoArte" name="servicos" value="Direção de Arte">
+                        </div>
+            
+                        <!-- Pesquisa e Locação -->
+                        <div class="checkbox-item">
+                            <label for="pesquisa">Pesquisa e locação para gravação</label>
+                            <input type="checkbox" id="pesquisa" name="servicos" value="Pesquisa e Locação">
+                        </div>
+            
+                        <!-- Edição Instagram -->
+                        <div class="checkbox-item">
+                            <label for="edicaoInstagram">Edição de vídeo (principal - para Instagram)</label>
+                            <input type="checkbox" id="edicaoInstagram" name="servicos" value="Edição Instagram">
+                        </div>
+            
+                        <!-- Edição YouTube -->
+                        <div class="checkbox-item">
+                            <label for="edicaoYoutube">Edição de vídeo (principal - para YouTube)</label>
+                            <input type="checkbox" id="edicaoYoutube" name="servicos" value="Edição Youtube">
+                        </div>
+            
+                        <!-- Edição de Cortes -->
+                        <div class="checkbox-item">
+                            <label for="cortes">Edição de cortes (para redes sociais ou shorts do YouTube)</label>
+                            <input type="checkbox" id="cortes" name="servicos" value="Edição de Cortes">
+                        </div>
+            
+                        <!-- Design -->
+                        <div class="checkbox-item">
+                            <label for="design">Design (ID Visual)</label>
+                            <input type="checkbox" id="design" name="servicos" value="Design">
+                        </div>
+            
+                        <!-- Videografismo -->
+                        <div class="checkbox-item">
+                            <label for="videografismo">Videografismo (Motion Design - animações ou vinhetas)</label>
+                            <input type="checkbox" id="videografismo" name="servicos" value="Videografismo">
+                        </div>
                     </div>
                 </div>
-            </fieldset>
+            </fieldset>            
 
             <!-- Seção 5: Especificações e Referências -->
             <fieldset>
