@@ -46,9 +46,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilo para a logo aumentada 40 vezes */
+/* Estilo para a logo */
 .logo {
-    width: 125px; /* Aumentar a largura da logo em 40 vezes */
+    width: 50px; /* Ajuste a largura da logo */
     height: auto; /* Manter a proporção da imagem */
 }
 
@@ -122,23 +122,23 @@ textarea {
 .checkbox-group {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralizar os checkboxes no eixo horizontal */
-    gap: 20px; /* Espaçamento maior entre checkboxes */
+    align-items: center; /* Centraliza todo o grupo de checkboxes */
+    gap: 20px; /* Espaçamento entre checkboxes */
 }
 
 .checkbox-item {
     display: flex;
-    flex-direction: column; /* Dispor o label e checkbox verticalmente */
+    flex-direction: column; /* Coloca o label acima do checkbox */
+    align-items: center; /* Centraliza o label e o checkbox */
     background-color: #1a1a1a;
     padding: 15px;
     border: 1px solid #fdfd96;
     border-radius: 8px;
-    width: 100%; /* A largura ocupa o espaço disponível */
-    max-width: 400px; /* Define uma largura máxima para não esticar demais em telas grandes */
-    align-items: center; /* Centraliza o checkbox e o label no contêiner */
+    width: 100%;
+    max-width: 400px; /* Limitar a largura para telas grandes */
 }
 
-/* Centralizar o checkbox e o label */
+/* Centralizar o checkbox */
 .checkbox-item input[type="checkbox"] {
     margin-top: 10px;
 }
@@ -146,21 +146,8 @@ textarea {
 .checkbox-item label {
     font-size: 1rem;
     color: #fdfd96;
-    text-align: center; /* Centralizar o texto do label */
+    text-align: center;
 }
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .checkbox-group {
-        align-items: center; /* Centraliza os checkboxes no celular */
-    }
-
-    .checkbox-item {
-        width: 100%; /* A largura ocupa todo o espaço disponível */
-        max-width: 400px; /* Limite de largura em telas pequenas */
-    }
-}
-
 
 /* Botão de ação */
 .action {
@@ -196,6 +183,11 @@ textarea {
     }
 
     .checkbox-group {
-        flex-direction: column;
+        align-items: center; /* Centraliza todo o grupo no celular */
+    }
+
+    .checkbox-item {
+        width: 100%; /* A largura ocupa todo o espaço disponível */
+        max-width: 100%; /* Ajusta a largura no celular para não ficar muito pequeno */
     }
 }
